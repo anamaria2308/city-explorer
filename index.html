@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Header cu Flexbox și navigare -->
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea Destinații-->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards-grid">
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p class="country">Portugalia</p>
+                    <p class="description">Orașul celor șapte coline, renumit pentru tramvaiele galbene și arhitectura istorică.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 4 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p class="country">Italia</p>
+                    <p class="description">Capitala istorică plină de monumente antice, muzee și gastronomie excelentă.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 5 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Praga</h3>
+                    <p class="country">Cehia</p>
+                    <p class="description">Orașul celor o sută de turnuri, celebru pentru Podul Carol și centrul vechi.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Barcelona</h3>
+                    <p class="country">Spania</p>
+                    <p class="description">Oraș vibrant de la malul mării, recunoscut pentru operele arhitecturale ale lui Gaudí.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 4 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Viena</h3>
+                    <p class="country">Austria</p>
+                    <p class="description">Centru al muzicii clasice, al palatelor imperiale și al cafenelelor tradiționale.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Secțiunea Planifică -->
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form class="plan-form">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Numele tău" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Viena">Viena</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" placeholder="Ex: 4" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea Recomandări -->
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul class="recommendations-list">
+                <li>Achiziționează biletele online pentru atracțiile turistice pentru a evita cozile mari.</li>
+                <li>Folosește transportul în comun sau cardurile turistice de oraș pentru acces nelimitat.</li>
+                <li>Explorează străzile lăturalnice pentru a descoperi restaurante locale autentice.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Footer -->
+    <footer class="site-footer">
+        <p>Proiect realizat de Nume Prenume &copy; 2026</p>
+    </footer>
+</body>
+</html>
