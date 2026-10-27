@@ -3,25 +3,13 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
-import { destinatii } from './data/destinatii.js';
-import {
-  getOrase,
-  getNevizitate,
-  totalZile,
-  formatDestinatie,
-  numarPeTara,
-  sortDupaZile,
-  marcheazaVizitat,
-  adaugaDestinatie,
-  stergeDestinatie
-} from './utils/destinatii.js';
-import { fetchUsers, fetchUserById } from './api/orase.js';
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>
 );
+
+
 
 // ===== Laboratorul 2 =====
 
